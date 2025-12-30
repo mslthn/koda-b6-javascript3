@@ -1,6 +1,7 @@
 let namaSiswa = ["Ana", "Andi", "Anto", "Antok", "Ani", "Anti", "Adi", "Adit", "Acil", "Anandita",
-    // "Budi", "Badu", "Badul", "Badui", "Baba",
-    // "Cici", "Cila", "Cico", "Chika", "Cicut", "Cicil", "Cicui"
+    "Budi", "Badu", "Badul", "Badui", "Baba", "Boci",
+    "Cici", "Cila", "Cico", "Chika", "Cicut", "Cicil", "Caca",
+    "Doni", "Dina", "Deni", "Dina", "Doni", "Dodo"
 ]
 
 let hasil = []
@@ -23,4 +24,4 @@ const searchNamaSiswa = (keyword, callbackFunction) => {
     callbackFunction(count)
 }
 
-searchNamaSiswa("An", (countNamaSiswa))
+searchNamaSiswa("CI", (countNamaSiswa))
