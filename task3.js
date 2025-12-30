@@ -3,7 +3,6 @@ let namaSiswa = ["Ana", "Andi", "Anto", "Antok", "Ani", "Anti", "Adi", "Adit", "
     // "Cici", "Cila", "Cico", "Chika", "Cicut", "Cicil", "Cicui"
 ]
 
-const source = "An"
 let hasil = []
 
 const countNamaSiswa = (hasilMatch) => {
@@ -16,10 +15,11 @@ const searchNamaSiswa = (keyword, callbackFunction) => {
         const lowercaseName = namaSiswa[i].toLowerCase()
         const keywordLower = keyword.toLowerCase()
         if (lowercaseName.includes(keywordLower)) {
-            console.log("Nama siswa :", namaSiswa[i]);
+            hasil.push(namaSiswa[i])
             count++
         }
     }
+    console.log(hasil);
     callbackFunction(count)
 }
 
