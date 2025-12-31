@@ -1,28 +1,27 @@
 // Program antri pesan makanan
 const data = [
     {name : "Andi",
-     wait : 1000
+     wait : 3000
     },
     {name : "Budi",
      wait : 5000
     },
     {name : "Citra",
-     wait : 15000
+     wait : 2000
     },
     {name : "Dewi",
-     wait : 7000
+     wait : 4000
     },
     {name : "Eka",
-     wait : 8000
+     wait : 1000
     }
 ]
 
-let i = 0
-for (i = 0; i < data.length; i++) {
+for (let i = 0; i < data.length; i++) {
         // console.log(data[i].name)
         setInterval( () => {
-            console.log("menunggu antrian")
             console.log(data[i].name)
+            console.log("menunggu antrian")
         }, 1000)
         
         setTimeout( () => {
@@ -39,7 +38,7 @@ for (i = 0; i < data.length; i++) {
 //     }
 // }
 
-setInterval( () => {
-    console.log("menunggu antrian")
-    console.log(data[i].name)
-}, 1000)
+// setInterval( () => {
+//     console.log("menunggu antrian")
+//     console.log(data[i].name)
+// }, 1000)
