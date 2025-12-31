@@ -20,8 +20,8 @@ const data = [
 for (let i = 0; i < data.length; i++) {
         // console.log(data[i].name)
         setInterval( () => {
-            console.log(data[i].name)
             console.log("menunggu antrian")
+            console.log(data[i].name)
         }, 1000)
         
         setTimeout( () => {
